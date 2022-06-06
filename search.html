@@ -12,23 +12,37 @@
     <script src="https://kit.fontawesome.com/ec7ea1a9d7.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/search_style.css">
-    <title>Hello, world!</title>
+    <title>Medizi</title>
   </head>
   <body>
 
 
 <!-- search section -->
 <center>
-  <div class="row py-5" style="justify-content: center; align-items: center;">
+  <div class="row py-5" style="justify-content: center; align-items: center;margin:0">
       <div class="col-lg-6 col-md-8">
-        <h1 class="display-1 heading">Med<span style=" color:#63e6be"> zi</span></h1>
+        <h1 class="display-1 heading">Med<span style=" color:#63e6be;padding-left: 10px;">zi</span></h1>
         <p class="lead text-muted">Medzi - The tag line goes here</p>
       </div>
   </div>
   
   <div class="container search_box">
-      <input placeholder="Search Specialists here" class = "search" type="text">
-      <input placeholder="Search Equipments here" class = "search" type="text">
+      <input placeholder="Search Specialists here" list="spec" class = "search spec" type="text">
+      <datalist id="spec">
+        <option value="Cardiologist">
+        <option value="Dermatologist">
+        <option value="Neurologist">
+        <option value="Oncologist">
+        <option value="Endocrinologists">
+      </datalist>
+      <input placeholder="Search Equipments here" list="equip" class = "search equip" type="text">
+      <datalist id="equip">
+        <option value="OPD">
+        <option value="Ventilator">
+        <option value="X-ray">
+        <option value="Ultrasound">
+        <option value="Emergency department">
+      </datalist>
       <div class="icon_box"><i class="fa-solid fa-magnifying-glass"></i></div>
  </div>
  </center>

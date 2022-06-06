@@ -18,3 +18,7 @@ for(let i=0;i<50;++i){
 for(let i=0;i<18;++i){
     setTimeout(function(){count4.innerText=i},20+10*i)
 }
+
+// calling bootstrap
+let spec = document.querySelector('.spec').value
+let equip = document.querySelector('.equip').value
