@@ -5,13 +5,202 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="comp_style.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/comp_style.css"> 
+    <title>Details</title>
   </head>
   <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #63e6be; padding-left:30px;padding-right:30px;">
+      <a class="navbar-brand" href="#" style="color: #183153;">
+          <i class="fa-solid fa-book-medical"></i> <span style="font-weight: bold; padding-left: 5px;"> MedZi</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" style="background-color: #63e6be;" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><b>Home</b> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html" ><span style="color: #183153;">Search</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket" style="color: #183153;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- details box main -->
+  <div class="d-flex flex-row bd-highlight mb-3" style="background-color: #f0fafc;">
+    <!-- details -->
+    <div class="col-12 col-sm-6 p-5 bd-highlight left">
+      <h1 class="labName">Lab Name</h1>
+      <h5 class="college">Collage Name</h5><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Time Slots</label>
+        <input type="text" class="form-control time" id="exampleInputPassword1" placeholder="Time" disabled>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="exampleInputPassword1">Distance</label>
+            <input type="text" class="form-control dist" placeholder="Dist" disabled>
+          </div>
+          <div class="col">
+            <label for="exampleInputPassword1">Price</label>
+            <input type="text" class="form-control price" placeholder="Cost" disabled>
+          </div>
+        </div>
+      </form>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Facilities Available</label>
+        <textarea class="form-control textBox" id="exampleFormControlTextarea1" rows="3" disabled></textarea>
+      </div>
+      <button type="submit" class="btn mb-2 book" style="background-color: #63e6be;">Book Class</button>
+
+    </div>
+
+    <!-- google location -->
+    <div class="d-none d-sm-block col-sm-6 p-2 bd-highlight"><iframe
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+
+  <!-- ======= Doctors Section ======= -->
+  <center><h1>Doctors</h1></center>
+  <section id="doctors" class="doctors">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Chief Medical Officer</span>
+              <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+              <div class="social">
+                <div class="btn" style="background-color: #63e6be;">Cardiology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Sarah Jhonson</h4>
+              <span>Anesthesiologist</span>
+              <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+              <div class="social">                
+                <div class="btn" style="background-color: #63e6be;">Cardiology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>William Anderson</h4>
+              <span>Cardiology</span>
+              <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+              <div class="social">
+                <div class="btn" style="background-color: #63e6be;">Cardiology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Amanda Jepson</h4>
+              <span>Neurosurgeon</span>
+              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <div class="social">
+                <div class="btn" style="background-color: #63e6be;">Cardiology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Doctors Section -->
+
+  <br><br>
+  <!-- ======= Appointment Section ======= -->
+  <section id="appointment" class="appointment section-bg" style="background-color: #f0fafc;">
+    <br>
+    <div class="container">
+      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 form-group mt-3">
+            <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3">
+            <select name="department" id="department" class="form-select">
+              <option value="">Select Department</option>
+              <option value="Department 1">Department 1</option>
+              <option value="Department 2">Department 2</option>
+              <option value="Department 3">Department 3</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3">
+            <select name="doctor" id="doctor" class="form-select">
+              <option value="">Select Doctor</option>
+              <option value="Doctor 1">Doctor 1</option>
+              <option value="Doctor 2">Doctor 2</option>
+              <option value="Doctor 3">Doctor 3</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Make an Appointment</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Appointment Section -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
