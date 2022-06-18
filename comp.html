@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Font awesome key -->
+    <script src="https://kit.fontawesome.com/ec7ea1a9d7.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/comp_style.css"> 
     <title>Details</title>
   </head>
@@ -75,7 +78,11 @@
   </div>
 
   <!-- ======= Doctors Section ======= -->
-  <center><h1>Doctors</h1></center>
+  <center>
+    <h1 class="heading">Doctors</h1>
+    <p class = "heading_sub">List of <b>doctors</b> available</p>
+    <br>
+  </center>
   <section id="doctors" class="doctors">
     <div class="container">
       <div class="row">
@@ -84,8 +91,8 @@
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Medical Officer</span>
+              <h3>Walter White</h3>
+              <span></span>
               <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
               <div class="social">
                 <div class="btn" style="background-color: #63e6be;">Cardiology</div>
@@ -98,8 +105,8 @@
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Anesthesiologist</span>
+              <h3>Sarah Jhonson</h3>
+              <span></span>
               <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
               <div class="social">                
                 <div class="btn" style="background-color: #63e6be;">Cardiology</div>
@@ -112,8 +119,8 @@
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>Cardiology</span>
+              <h3>William Anderson</h3>
+              <span></span>
               <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
               <div class="social">
                 <div class="btn" style="background-color: #63e6be;">Cardiology</div>
@@ -126,8 +133,8 @@
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="images/doctors-2.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>Amanda Jepson</h4>
-              <span>Neurosurgeon</span>
+              <h3>Amanda Jepson</h3>
+              <span></span>
               <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
               <div class="social">
                 <div class="btn" style="background-color: #63e6be;">Cardiology</div>
@@ -143,64 +150,57 @@
 
   <br><br>
   <!-- ======= Appointment Section ======= -->
+  
   <section id="appointment" class="appointment section-bg" style="background-color: #f0fafc;">
-    <br>
+    <br><br>
+    <center>
+      <h1 class="heading">Appointment</h1>
+      <p class = "heading_sub">Book <b>Appointment</b> online</p>
+      <br>
+    </center>
     <div class="container">
-      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <form>
         <div class="row">
-          <div class="col-md-4 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-            <div class="validate"></div>
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" placeholder="First name">
           </div>
-          <div class="col-md-4 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-            <div class="validate"></div>
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" placeholder="Last name">
           </div>
-          <div class="col-md-4 form-group mt-3 mt-md-0">
-            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-            <div class="validate"></div>
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" placeholder="Last name">
           </div>
-        </div>
+        </div><br>
         <div class="row">
-          <div class="col-md-4 form-group mt-3">
-            <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-            <div class="validate"></div>
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" placeholder="First name">
           </div>
-          <div class="col-md-4 form-group mt-3">
-            <select name="department" id="department" class="form-select">
-              <option value="">Select Department</option>
-              <option value="Department 1">Department 1</option>
-              <option value="Department 2">Department 2</option>
-              <option value="Department 3">Department 3</option>
+          <div class="col">
+            <select class="form-control form-control-lg">
+              <option>Large select</option>
             </select>
-            <div class="validate"></div>
           </div>
-          <div class="col-md-4 form-group mt-3">
-            <select name="doctor" id="doctor" class="form-select">
-              <option value="">Select Doctor</option>
-              <option value="Doctor 1">Doctor 1</option>
-              <option value="Doctor 2">Doctor 2</option>
-              <option value="Doctor 3">Doctor 3</option>
+          <div class="col">
+            <select class="form-control form-control-lg">
+              <option>Large select</option>
             </select>
-            <div class="validate"></div>
           </div>
-        </div>
-
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-          <div class="validate"></div>
-        </div>
-        <div class="mb-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Make an Appointment</button></div>
+        </div><br>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Enter Description" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div><br><center>
+          <button type="button" class="sub btn btn-lg" style="background-color: #63e6be;">Make an Appointment</button>
+        </center>
       </form>
-
     </div>
+    <br><br><br><br>
   </section><!-- End Appointment Section -->
 
+  <div class="container">
+    <div class="footer"></div>
+      <center>skjd</center>
+    </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

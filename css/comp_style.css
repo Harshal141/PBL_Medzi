@@ -1,6 +1,24 @@
 *{
     font-family: roboto;
 }
+.heading{
+  font-size: 69px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #183153;
+}
+.heading_sub{
+  color: rgb(69, 69, 69);
+}
+.sub{
+  padding: 10px 50px 10px 50px;
+  border-radius: 50px;
+}
+.btn{
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
@@ -27,8 +45,8 @@
   .doctors .member .member-info {
     padding-left: 30px;
   }
-  .doctors .member h4 {
-    font-weight: 700;
+  .doctors .member h3 {
+    letter-spacing: 1px;
     margin-bottom: 5px;
     font-size: 20px;
     color: #183153;
