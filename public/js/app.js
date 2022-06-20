@@ -27,8 +27,8 @@ let data = [
         id:0,
         type:'clinic',
         emergency:'yes',
-        spec:[],
-        equip:[],
+        spec:['Cardiologist','Neurologist','Oncologist','Endocrinologists'],
+        equip:['equip,OPD','Ventilator','X-ray','Ultrasound','Emergency department'],
         desc:'This is a hospital',
         beds:123,
         dist:69,
@@ -41,11 +41,11 @@ let data = [
     },
     {
         name:'hh1',
-        id:0,
+        id:1,
         type:'clinic',
         emergency:'yes',
-        spec:[],
-        equip:[],
+        spec:['Cardiologist','Dermatologist','Neurologist','Oncologist','Endocrinologists'],
+        equip:['equip,OPD','X-ray','Ultrasound','Emergency department'],
         desc:'This is a hospital',
         beds:123,
         dist:69,
@@ -58,11 +58,45 @@ let data = [
     },
     {
         name:'h69',
-        id:0,
+        id:2,
         type:'clinic',
         emergency:'yes',
-        spec:[],
-        equip:[],
+        spec:['Cardiologist','Dermatologist','Neurologist','Oncologist','Endocrinologists'],
+        equip:['equip,OPD','Ventilator','X-ray','Ultrasound','Emergency department'],
+        desc:'This is a hospital',
+        rating:50,
+        beds:123,
+        dist:69,
+        docs:[
+            {name:'hp',desc:'ashdk',spec:'cardio'},
+            {name:'hp',desc:'ashdk',spec:'cardio'},
+            {name:'hp',desc:'ashdk',spec:'cardio'}
+        ]
+    },
+    {
+        name:'h69',
+        id:3,
+        type:'clinic',
+        emergency:'yes',
+        spec:['Cardiologist','Dermatologist','Neurologist','Oncologist','Endocrinologists'],
+        equip:['equip,OPD','Ventilator','X-ray','Ultrasound','Emergency department'],
+        desc:'This is a hospital',
+        rating:50,
+        beds:123,
+        dist:69,
+        docs:[
+            {name:'hp',desc:'ashdk',spec:'cardio'},
+            {name:'hp',desc:'ashdk',spec:'cardio'},
+            {name:'hp',desc:'ashdk',spec:'cardio'}
+        ]
+    },
+    {
+        name:'h69',
+        id:4,
+        type:'clinic',
+        emergency:'yes',
+        spec:['Cardiologist','Dermatologist','Neurologist','Oncologist','Endocrinologists'],
+        equip:['equip,OPD','Ventilator','X-ray','Ultrasound','Emergency department'],
         desc:'This is a hospital',
         rating:50,
         beds:123,
@@ -123,10 +157,12 @@ box.addEventListener('click',()=>{
     if(spec == '' || equip == ''){
         alert('Please Select both field')
     }
-    
-        for(let i=0;i<3;++i){
-            let neww = data[i] 
-            document.querySelector('.rowFilter').innerHTML += boxx(neww.name,neww.dist,neww.rating,neww.type,neww.beds,i)  
+    else{
+        for(let i=0;i<data.length;++i){
+            if(data[i].spec.includes(spec) && data[i].equip.includes(equip)){
+                let neww = data[i] 
+                document.querySelector('.rowFilter').innerHTML += boxx(neww.name,neww.dist,neww.rating,neww.type,neww.beds,neww.id)  
+            }
         }
-    
+    }
 })
