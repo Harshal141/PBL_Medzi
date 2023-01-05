@@ -3,7 +3,7 @@
 
 ### Project based learning for First year
 
-> https://medzi141.herokuapp.com/
+> https://pbl-medzi.onrender.com/
 
 ## Overview:
 > Getting a proper health facility is a dream for all. Not all hospitals have good facilities, equipment, or experienced personnel to take care of the residents of that city. This problem can be overcome if all the hospitals work in collaboration with each other to ensure everyone can get the proper treatment they need.
